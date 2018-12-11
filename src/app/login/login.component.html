@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="form-heading">login Form</h1>
+  <div class="login-form">
+    <div class="main-div">
+      <div class="panel">
+        <h2>Login</h2>
+        <p>Insira seu usuario e senha</p>
+      </div>
+
+      <form [formGroup]="loginForm" (ngSubmit)="logar()">
+        <div class="form-group">
+          <input type="email" class="form-control" formControlName="inputLogin" placeholder="Usuário">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" formControlName="inputSenha" placeholder="Senha">
+        </div>
+        <div class="forgot">
+          <a href="reset.html">Esqueci minha senha</a>
+        </div>
+        <button class="btn btn-primary">Entrar</button>
+    </form>
+    </div>
+
+    <p class="botto-text"> Willian Petry</p>
+  </div>
+</div>
